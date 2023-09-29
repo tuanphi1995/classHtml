@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .css1 {
+            background-color: blueviolet;
+            color: white;
+            font-weight: 100;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction1()">Hide elements</button>
+<button onclick="myFunction2()">Hide elements</button>
+
+    <h1 class="css1">London</h1>
+    <p>London is the capital of England.</p>
+
+    <h2 class="css1">Paris </h2>
+    <p>Paris is the capital of Franc.</p>
+
+    <h2 class="css1">Tokyo</h2>
+    <p>Tokyo is the capital of Japan</p>
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <script>
+        function myFunction1() {
+          var x = document.getElementsByClassName("css1");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+        <script>
+            function myFunction2() {
+              var x = document.getElementsByClassName("css1");
+              for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+              }
+            }
+            </script>
+       
+    
+</body>
+</html>
